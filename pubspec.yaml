@@ -1,8 +1,8 @@
 name: simple_switch
-description: A new Flutter package project.
+description: A simple toggle switch widget.
 version: 0.0.1
-author:
-homepage:
+author: Joshua de Guzman <contact@joshuadeguzman.net>
+homepage: https://github.com/joshuadeguzman/simple_switch
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

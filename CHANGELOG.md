@@ -1,3 +1,3 @@
-## [0.0.1] - TODO: Add release date.
+## [1.0.0] - July 07, 2020
 
-* TODO: Describe initial release.
+- Initial release of the [SimpleSwitch] widget
