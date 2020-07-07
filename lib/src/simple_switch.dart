@@ -122,6 +122,12 @@ class _SimpleSwitchState extends State<SimpleSwitch>
   }
 
   @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {

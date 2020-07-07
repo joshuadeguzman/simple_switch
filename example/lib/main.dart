@@ -35,7 +35,6 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   bool _isItem1Toggled = false;
-  bool _isItem2Toggled = false;
 
   @override
   Widget build(BuildContext context) {
@@ -57,19 +56,6 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             SizedBox(height: 12),
             Text("Value: $_isItem1Toggled"),
-            SizedBox(height: 24),
-            SimpleSwitch(
-              value: _isItem2Toggled,
-              activeColor: Colors.green,
-              inactiveColor: Colors.grey.shade300,
-              onChanged: (value) {
-                setState(() {
-                  _isItem2Toggled = value;
-                });
-              },
-            ),
-            SizedBox(height: 12),
-            Text("Value: $_isItem2Toggled"),
           ],
         ),
       ),
