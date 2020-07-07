@@ -2,6 +2,10 @@
 
 A simple yet customizable and lightweight switch widget.
 
+## Demo
+
+![demo-1](demo.gif)
+
 ## Setup
 
 ### 1. Depend on it
