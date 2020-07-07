@@ -1,6 +1,6 @@
 name: simple_switch
 description: A simple toggle switch widget.
-version: 1.0.0
+version: 1.0.1
 author: Joshua de Guzman <contact@joshuadeguzman.net>
 homepage: https://github.com/joshuadeguzman/simple_switch
 
