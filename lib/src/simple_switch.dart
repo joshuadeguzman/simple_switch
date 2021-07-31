@@ -66,10 +66,10 @@ class SimpleSwitch extends StatefulWidget {
   final bool value;
 
   /// Sets the optional [onChanged] callback of this [component] whenver it's toggled.
-  final ValueChanged<bool> onChanged;
+  final ValueChanged<bool>? onChanged;
 
   const SimpleSwitch({
-    Key key,
+    Key? key,
     this.activeColor = _kDefaultActiveColor,
     this.inactiveColor = _kDefaultInactiveColor,
     this.padding = _kDefaultPadding,
@@ -91,8 +91,8 @@ class SimpleSwitch extends StatefulWidget {
 
 class _SimpleSwitchState extends State<SimpleSwitch>
     with SingleTickerProviderStateMixin {
-  AnimationController _controller;
-  Animation _animation;
+  late AnimationController _controller;
+  late Animation _animation;
 
   Color get _activeColor => widget.activeColor;
   Color get _inactiveColor => widget.inactiveColor;
@@ -104,7 +104,7 @@ class _SimpleSwitchState extends State<SimpleSwitch>
   Curve get _curve => widget.curve;
   Duration get _duration => widget.duration;
   bool get _value => widget.value;
-  ValueChanged<bool> get _onChanged => widget.onChanged;
+  ValueChanged<bool>? get _onChanged => widget.onChanged;
 
   @override
   void initState() {
@@ -138,7 +138,7 @@ class _SimpleSwitchState extends State<SimpleSwitch>
         }
 
         if (_onChanged != null) {
-          _onChanged(_value == false);
+          _onChanged!(_value == false);
         }
       },
       child: AnimatedContainer(
